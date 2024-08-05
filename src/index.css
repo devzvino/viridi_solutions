@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+li {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #6f6c90;
+}
+h4 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #6f6c90;
+  font-weight: bolder;
+}
+
+/* h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1c49a6;
+  font-weight: 800;
+} */
+
+.gradient-text {
+  background: linear-gradient(to right, #002c59, #ae03c9); /* Light Orange to Baby Blue */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  stroke: #414649;
+  stroke-width: 1px;
+}
+.contWide {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.leftPadding {
+  padding-left: 5%;
+}
+
+.footerLogo {
+  z-index: 0;
+  filter: brightness(0) invert(1); /* Convert the logo to grayscale (white) */
+}
+
+@media (max-width: 768px) {
+  .contWide {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .leftPadding {
+    padding-left: 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .contWide {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .leftPadding {
+    padding-left: 10%;
+  }
+}
+@media only screen and (min-device-pixel-ratio: 3) {
+  /* Your high-resolution screen styles go here */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2) {
+  /* Your Retina screen styles go here */
+  .contWide {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .leftPadding {
+    padding-left: 5%;
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to an element */
+.slide-in-from-top {
+  animation: slideInFromTop 0.3s ease-in-out;
+}
+
+.radial-grad {
+  background: radial-gradient(circle 1000px at 50% 1300px, #ff801550 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
