@@ -26,7 +26,7 @@ const NavigationBar = () => {
     }, []);
 
     return (
-        <div className={`w-full  contWide flex  top-0  z-50 ${(window.location.pathname === '/') && (backgroundColor ? 'bg-white fixed ' : 'bg-transparent fixed')} ${(window.location.pathname !== '/') && 'bg-[#151515]'}   justify-between `}>
+        <div className={`w-full  contWide flex  top-0  z-50 ${(window.location.pathname === '/') && (backgroundColor ? 'bg-white fixed ' : 'bg-transparent fixed')} ${(window.location.pathname !== '/') && 'bg-[#151515] fixed '}   justify-between `}>
             <div>
                 <img src={main_logo} onClick={() => window.location.pathname = '/'} className={`md:max-2xl:h-20 h-[70px] ${(window.location.pathname === '/') && (backgroundColor ? '' : 'footerLogo')} cursor-pointer py-3`} alt="viridi_logo" />
             </div>

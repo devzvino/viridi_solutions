@@ -10,7 +10,7 @@ const Home = () => {
     const [selectedProduct, setSelectedProduct] = React.useState(null)
     return (
         <div>
-            <div className='w-full contWide flex gap-y-10 flex-col md:max-2xl:justify-center justify-end pb-10 md:max-2xl:pb-0  h-screen bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${hero_bg})` }} >
+            <div className='w-full contWide flex gap-y-10 flex-col justify-center  h-screen bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${hero_bg})` }} >
                 <div className='text-white md:max-2xl:w-[45%] flex flex-col gap-y-5'>
                     <h1 className='md:max-2xl:text-7xl text-5xl font-extrabold '>
                         Reduce your footprint and go green.
@@ -57,7 +57,7 @@ const Home = () => {
                         ))
                     }
                 </div>
-                <div className='w-full md:max-2xl:flex hidden '>
+                <div className='w-full md:max-2xl:flex hidden  '>
                     {
                         open ? (
                             <div className='w-full  bg-black/60  bg-cover bg-no-repeat bg-center' style={{ backgroundImage: `url(${selectedProduct.img})` }}>
